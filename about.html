@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="btn"><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-about container">
+            <div class="info">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, necessitatibus! Fugiat, error! Dolorem, quis nam vitae asperiores nisi ipsum accusamus?</p>
+                <button class="btn">Get in touch</button>
+            </div>
+            <img src="img/about-banner.webp" alt="">
+        </div>
+
+        <div class="container work">
+            <h2>Why work with us</h2>
+            <div class="blocks">
+                <div class="block">
+                    <span class="badge purple">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi dicta dignissimos porro qui suscipit inventore atque cumque saepe magni.</p>
+                </div>
+                <div class="block">
+                    <span class="badge brown">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi dicta dignissimos porro qui suscipit inventore atque cumque saepe magni.</p>
+                </div>
+                <div class="block">
+                    <span class="badge green">Lorem ipsum</span>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse excepturi dicta dignissimos porro qui suscipit inventore atque cumque saepe magni.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+        <div class="container email about-email">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque fugiat doloribus in a eos tempora unde, quo voluptatum et illum!</p>
+            <div class="block">
+                <div>
+                    <h4>Stay in the loop</h4>
+                    <p>Subscribe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex provident, cum ratione ipsam nihil iusto excepturi impedit? Quasi, adipisci dolorum.</p>
+                </div>
+                <div>
+                    <input type="email" id="emailFiled" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">logo</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consectetur natus cumque? Totam veniam corporis quaerat deleniti voluptates impedit cum.</p>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Zeux</li>
+                    <li>Portfolio</li>
+                    <li>Careers</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quisquam aperiam laudantium non minima ex?</p>
+                <p>+7 707 271 0401</p>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright ® 2021 Lorem All rights Reserved</p>
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailFiled').value;
+            if(!email.includes('@')) alert('No simbol @');
+            else if(!email.includes('.')) alert('No simbol .');
+            else alert('All good!');
+        }
+    </script>
+</body>
+</html>
